@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_mysqldb import MySQL
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import pandas as pd
 import numpy as np
@@ -13,6 +12,8 @@ import pymysql
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 import re
+import pymysql
+pymysql.install_as_MySQLdb()
 
 load_dotenv()
 
