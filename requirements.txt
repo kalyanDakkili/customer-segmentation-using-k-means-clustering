@@ -1,0 +1,10 @@
+Flask
+pymysql
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+joblib
+python-dotenv
+flask-login
