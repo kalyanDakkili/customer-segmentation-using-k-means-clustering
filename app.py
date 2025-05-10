@@ -36,6 +36,10 @@ class User(UserMixin):
         self.username = username
         self.email = email
 
+
+login_manager = LoginManager()
+login_manager.init_app(app)  # Make sure 'app' is your Flask app instance
+
 @login_manager.user_loader
 def load_user(user_id):
     try:
